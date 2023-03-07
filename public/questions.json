@@ -1,0 +1,94 @@
+[  {    "question": "What is the capital city of Bangladesh?",    "options": [      "A) Chittagong",      "B) Sylhet",      "C) Dhaka",      "D) Rajshahi"    ],
+    "answer": "C) Dhaka"
+  },
+  {
+    "question": "What is the name of the longest natural sea beach in the world located in Bangladesh?",
+    "options": [
+      "A) Cox's Bazar",
+      "B) Kuakata",
+      "C) Saint Martin's Island",
+      "D) Bakkhali Beach"
+    ],
+    "answer": "A) Cox's Bazar"
+  },
+  {
+    "question": "What is the name of the largest river in Bangladesh?",
+    "options": [
+      "A) Brahmaputra",
+      "B) Ganges",
+      "C) Meghna",
+      "D) Jamuna"
+    ],
+    "answer": "D) Jamuna"
+  },
+  {
+    "question": "What is the name of the national animal of Bangladesh?",
+    "options": [
+      "A) Bengal tiger",
+      "B) Lion",
+      "C) Rhinoceros",
+      "D) Leopard"
+    ],
+    "answer": "A) Bengal tiger"
+  },
+  {
+    "question": "What is the name of the largest mangrove forest in the world located in Bangladesh?",
+    "options": [
+      "A) Sundarbans",
+      "B) Bhitarkanika",
+      "C) Pichavaram",
+      "D) Dandeli-Anshi"
+    ],
+    "answer": "A) Sundarbans"
+  },
+  {
+    "question": "What is the name of the national bird of Bangladesh?",
+    "options": [
+      "A) Sparrow",
+      "B) Oriental magpie-robin",
+      "C) Bulbul",
+      "D) Doel"
+    ],
+    "answer": "D) Doel"
+  },
+  {
+    "question": "What is the name of the highest peak in Bangladesh?",
+    "options": [
+      "A) Mount Everest",
+      "B) K2",
+      "C) Kangchenjunga",
+      "D) Saka Haphong"
+    ],
+    "answer": "D) Saka Haphong"
+  },
+  {
+    "question": "What is the name of the national fish of Bangladesh?",
+    "options": [
+      "A) Ilish",
+      "B) Rohu",
+      "C) Catfish",
+      "D) Tilapia"
+    ],
+    "answer": "A) Ilish"
+  },
+  {
+    "question": "What is the name of the famous festival in Bangladesh that is celebrated to mark the end of the fasting month of Ramadan?",
+    "options": [
+      "A) Eid al-Fitr",
+      "B) Eid al-Adha",
+      "C) Ashura",
+      "D) Muharram"
+    ],
+    "answer": "A) Eid al-Fitr"
+  },
+  {
+    "question": "What is the name of the national flower of Bangladesh?",
+    "options": [
+      "A) Lotus",
+      "B) Water lily",
+      "C) Rose",
+      "D) Jasmine"
+    ],
+    "answer": "B) Water lily"
+  }
+]
