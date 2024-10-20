@@ -1,0 +1,18 @@
+#@BASE_URL = http://localhost:3000/api
+@BASE_URL = https://quiz.bandhanhara.com/api
+### Create a new quiz
+POST {{BASE_URL}}/quiz
+Content-Type: application/json
+
+{
+  "name": "BMW",
+  "topic": "BMW 10 unknown facts"
+}
+
+### Fetch all quizzes
+GET {{BASE_URL}}/quiz
+Content-Type: application/json
+
+### Fetch a quiz
+GET {{BASE_URL}}/quiz/08581773
+Content-Type: application/json
