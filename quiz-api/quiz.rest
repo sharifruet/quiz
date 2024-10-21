@@ -1,6 +1,7 @@
-#@BASE_URL = http://localhost:3000/api
-@BASE_URL = https://quiz.bandhanhara.com/api
-### Create a new quiz
+@BASE_URL = http://localhost:3000/api
+#@BASE_URL = https://quiz.bandhanhara.com/api
+
+### 1. Create a new quiz
 POST {{BASE_URL}}/quiz
 Content-Type: application/json
 
@@ -9,10 +10,35 @@ Content-Type: application/json
   "topic": "BMW 10 unknown facts"
 }
 
-### Fetch all quizzes
+### 2. Fetch all quizzes
 GET {{BASE_URL}}/quiz
 Content-Type: application/json
 
-### Fetch a quiz
+### 3. Fetch a specific quiz by quizId
 GET {{BASE_URL}}/quiz/08581773
+Content-Type: application/json
+
+### 5. Create quiz (execution) details
+GET {{BASE_URL}}/quiz/08581773/exec
+Content-Type: application/json
+
+### 5. Fetch hosted quiz (execution) details
+GET {{BASE_URL}}/exec/08581773
+Content-Type: application/json
+
+### 6. Add participant answer for a specific question
+POST {{BASE_URL}}/quiz/12345678/participant/p123
+Content-Type: application/json
+
+{
+  "questionId": 1,
+  "answer": "A"
+}
+
+### 7. Join a quiz execution
+POST {{BASE_URL}}/quiz/12345678/join/JohnDoe
+Content-Type: application/json
+
+### 8. Fetch a specific question for a quiz execution
+GET {{BASE_URL}}/exec/12345678/question/1
 Content-Type: application/json
