@@ -10,12 +10,12 @@
   }
   
   .game-lobby h2 {
-    color: #46178f; /* Kahoot purple */
+    color: #182D3B; /* Kahoot purple */
     margin-bottom: 1.5rem;
   }
-  
+
   .start-game-btn {
-    background: #46178f;
+    background: #182D3B;
     color: white;
     border: none;
     border-radius: 50px;
@@ -29,7 +29,7 @@
   }
   
   .start-game-btn:hover {
-    background: #5d20bf;
+    background: #182D3B;
     transform: translateY(-2px);
     box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
   }
@@ -41,7 +41,7 @@
   
   .player-count {
     font-size: 1.2rem;
-    color: #46178f;
+    color: #182D3B;
     margin: 1.5rem 0;
     font-weight: bold;
   }

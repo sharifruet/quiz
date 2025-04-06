@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    background: linear-gradient(135deg, #182D3B 0%, #7e3bff 100%);
     padding: 20px;
   }
   
@@ -19,7 +19,7 @@
   }
   
   .join-title {
-    color: #46178f;
+    color: #182D3B;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
   }
@@ -43,18 +43,18 @@
     font-size: 1.5rem;
     letter-spacing: 3px;
     font-weight: bold;
-    color: #46178f;
+    color: #182D3B;
   }
   
   .pin-input:focus,
   .name-input:focus {
     outline: none;
-    border-color: #46178f;
+    border-color: #182D3B;
     box-shadow: 0 0 0 3px rgba(70, 23, 143, 0.2);
   }
   
   .join-button {
-    background: #46178f;
+    background: #182D3B;
     color: white;
     border: none;
     border-radius: 50px;

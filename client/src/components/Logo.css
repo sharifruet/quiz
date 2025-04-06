@@ -6,22 +6,20 @@
     font-family: 'Arial', sans-serif;
     font-weight: 800;
     font-size: 2rem;
-    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    background: linear-gradient(135deg, #182D3B 0%, #1D3748 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
   
   .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 80px;
   }
   
   /* For the Q letter replacement */
   .logo-container::before {
-    content: "Q";
     display: inline-block;
-    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    background: linear-gradient(135deg, #182D3B 0%, #1D3748 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

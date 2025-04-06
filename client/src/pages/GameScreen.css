@@ -14,7 +14,7 @@
   }
   
   .waiting-screen h2 {
-    color: #46178f;
+    color: #182D3B;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -47,7 +47,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: #46178f;
+    background: #182D3B;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
   
   .countdown-screen p {
     font-size: 1.5rem;
-    color: #46178f;
+    color: #182D3B;
     font-weight: bold;
   }
   
@@ -183,13 +183,13 @@
   }
   
   .ended-screen h2 {
-    color: #46178f;
+    color: #182D3B;
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
   
   .play-again-btn {
-    background: #46178f;
+    background: #182D3B;
     color: white;
     border: none;
     border-radius: 50px;

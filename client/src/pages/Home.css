@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    background: linear-gradient(135deg, #182D3B 0%, #1D3748 100%);
     padding: 20px;
     text-align: center;
   }
@@ -19,7 +19,7 @@
   }
   
   .home-title {
-    color: #46178f;
+    color: #182D3B;
     font-size: 3rem;
     margin-bottom: 0.5rem;
     font-weight: 800;
@@ -52,7 +52,7 @@
   }
   
   .host-button {
-    background: #46178f;
+    background: #182D3B;
     color: white;
     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
   }
