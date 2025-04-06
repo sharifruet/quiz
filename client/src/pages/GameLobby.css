@@ -1,0 +1,60 @@
+/* src/pages/GameLobby.css */
+.game-lobby {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .game-lobby h2 {
+    color: #46178f; /* Kahoot purple */
+    margin-bottom: 1.5rem;
+  }
+  
+  .start-game-btn {
+    background: #46178f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .start-game-btn:hover {
+    background: #5d20bf;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .start-game-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .player-count {
+    font-size: 1.2rem;
+    color: #46178f;
+    margin: 1.5rem 0;
+    font-weight: bold;
+  }
+  
+  .loading-text {
+    color: #666;
+    font-style: italic;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .game-lobby {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }

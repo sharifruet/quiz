@@ -1,0 +1,109 @@
+/* src/pages/PlayerJoin.css */
+.player-join-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    padding: 20px;
+  }
+  
+  .join-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .join-title {
+    color: #46178f;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .pin-input,
+  .name-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .pin-input {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #46178f;
+  }
+  
+  .pin-input:focus,
+  .name-input:focus {
+    outline: none;
+    border-color: #46178f;
+    box-shadow: 0 0 0 3px rgba(70, 23, 143, 0.2);
+  }
+  
+  .join-button {
+    background: #46178f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .join-button:hover {
+    background: #5d20bf;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .join-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .join-button:disabled {
+    background: #cccccc;
+    transform: none;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #ff4444;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .join-card {
+      padding: 1.5rem;
+    }
+    
+    .join-title {
+      font-size: 1.5rem;
+    }
+    
+    .pin-input {
+      font-size: 1.3rem;
+      padding: 12px;
+    }
+  }

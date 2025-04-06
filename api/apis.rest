@@ -1,0 +1,61 @@
+@baseUrl = http://localhost:5000/api
+
+### 1. Create a Quiz (Host)
+POST {{baseUrl}}/quizzes
+Content-Type: application/json
+
+{
+  "title": "Science Quiz",
+  "createdBy": "teacher1",
+  "questions": [
+    {
+      "questionText": "What is the chemical symbol for water?",
+      "options": ["H2O", "CO2", "NaCl", "O2"],
+      "correctAnswer": 0,
+      "timeLimit": 15
+    },
+    {
+      "questionText": "Which planet is closest to the sun?",
+      "options": ["Venus", "Mars", "Mercury", "Earth"],
+      "correctAnswer": 2,
+      "timeLimit": 10
+    }
+  ]
+}
+
+### 2. Get All Quizzes
+GET {{baseUrl}}/quizzes
+
+### 3. Start a Game Session
+POST {{baseUrl}}/game/start
+Content-Type: application/json
+
+{
+  "quizId": 13
+}
+
+### 4. Join a Game (Player)
+POST {{baseUrl}}/game/join
+Content-Type: application/json
+
+{
+  "pin": "{{gamePin}}",
+  "playerName": "student1"
+}
+
+### 5. Get Leaderboard
+GET {{baseUrl}}/game/{{gamePin}}/leaderboard
+
+### 6. Submit Answer (Socket.io - Test via Mock)
+POST {{baseUrl}}/game/submit
+Content-Type: application/json
+
+{
+  "pin": "{{gamePin}}",
+  "playerId": 1,
+  "questionId": 1,
+  "answer": 0
+}
+
+### 7. End Game Session
+DELETE {{baseUrl}}/game/{{gamePin}}

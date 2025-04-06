@@ -1,0 +1,24 @@
+.timer-container {
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.timer-bar {
+  height: 100%;
+  background: #ff5722;
+  transition: width 1s linear;
+}
+
+.timer-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 2px black;
+}

@@ -1,0 +1,35 @@
+.player-list {
+  margin: 20px 0;
+}
+
+.player-avatars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.player-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #5856D6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.player-badge span {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: center;
+  word-break: break-all;
+}

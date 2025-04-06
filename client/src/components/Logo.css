@@ -1,0 +1,28 @@
+/* src/components/Logo.css */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* For the Q letter replacement */
+  .logo-container::before {
+    content: "Q";
+    display: inline-block;
+    background: linear-gradient(135deg, #46178f 0%, #7e3bff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }

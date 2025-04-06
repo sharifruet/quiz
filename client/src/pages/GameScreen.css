@@ -1,0 +1,224 @@
+/* src/pages/GameScreen.css */
+.game-screen {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background: #f5f5f5;
+  }
+  
+  /* Waiting Screen */
+  .waiting-screen {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .waiting-screen h2 {
+    color: #46178f;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .waiting-tip {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .waiting-tip p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Countdown Screen */
+  .countdown-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+  }
+  
+  .countdown-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #46178f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    animation: pulse 1s infinite alternate;
+  }
+  
+  .countdown-circle h1 {
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+  }
+  
+  .countdown-screen p {
+    font-size: 1.5rem;
+    color: #46178f;
+    font-weight: bold;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(70, 23, 143, 0.7);
+    }
+    to {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 15px rgba(70, 23, 143, 0);
+    }
+  }
+  
+  /* Question Screen */
+  .question-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .question-header {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .question-header h3 {
+    color: #666;
+    margin-top: 0;
+  }
+  
+  .question-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .option-button {
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-button:nth-child(1) { background: #FF2D55; }
+  .option-button:nth-child(2) { background: #5856D6; }
+  .option-button:nth-child(3) { background: #FF9500; }
+  .option-button:nth-child(4) { background: #34C759; }
+  
+  .option-button:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  .option-button.selected {
+    transform: scale(0.98);
+    box-shadow: inset 0 0 0 3px white;
+  }
+  
+  .option-button.correct {
+    box-shadow: inset 0 0 0 5px #4CAF50;
+    animation: correctFlash 0.5s;
+  }
+  
+  .option-button.wrong {
+    box-shadow: inset 0 0 0 5px #FF5252;
+    opacity: 0.7;
+  }
+  
+  .option-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  
+  .option-letter {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background: rgba(255,255,255,0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes correctFlash {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Ended Screen */
+  .ended-screen {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .ended-screen h2 {
+    color: #46178f;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .play-again-btn {
+    background: #46178f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .play-again-btn:hover {
+    background: #5d20bf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .question-text {
+      font-size: 1.3rem;
+    }
+    
+    .option-button {
+      min-height: 80px;
+      padding: 1rem;
+    }
+  }
