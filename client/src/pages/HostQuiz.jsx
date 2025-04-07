@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../api';
 import './HostQuiz.css';
+import Logo from '../components/Logo';
 
 export default function HostQuiz() {
   const [title, setTitle] = useState('');
@@ -125,6 +126,7 @@ export default function HostQuiz() {
 
   return (
     <div className="host-quiz-container">
+      <Logo />
       <h2>Create New Quiz</h2>
       
       <div className="quiz-title">

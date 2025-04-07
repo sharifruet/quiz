@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Logo from '../components/Logo';
 import api from '../api';
 import socket from '../socket';
 import './PlayerJoin.css'; // CSS import
@@ -33,7 +34,9 @@ export default function PlayerJoin() {
 
   return (
     <div className="player-join-container">
+      
       <div className="join-card">
+        <Logo/>
         <h2 className="join-title">Enter Game PIN</h2>
         
         <div className="input-group">

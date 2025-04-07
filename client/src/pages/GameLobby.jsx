@@ -4,6 +4,7 @@ import api from '../api'; // Add this import
 import socket from '../socket';
 import PinDisplay from '../components/PinDisplay';
 import PlayerList from '../components/PlayerList';
+import Logo from '../components/Logo';
 
 export default function GameLobby() {
   const { quizId } = useParams();
@@ -33,6 +34,7 @@ export default function GameLobby() {
 
   return (
     <div className="game-lobby">
+      <Logo/>
       <PinDisplay pin={pin} />
       <PlayerList players={players} />
       <button onClick={startGame}>Start Quiz</button>

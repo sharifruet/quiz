@@ -4,6 +4,7 @@ import socket from '../socket';
 import Leaderboard from '../components/Leaderboard';
 import PlayerList from '../components/PlayerList';
 import './GameScreen.css';
+import Logo from '../components/Logo';
 
 export default function GameScreen() {
   const { playerId } = useParams();
@@ -78,6 +79,7 @@ export default function GameScreen() {
 
   return (
     <div className="game-screen">
+      <Logo/>
       {gameState === 'waiting' && (
         <div className="waiting-screen">
           <h2>Game Will Start Soon!</h2>
